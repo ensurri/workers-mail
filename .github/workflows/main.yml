@@ -10,7 +10,7 @@ jobs:
     name: Deploy
     steps:
       - run: npm install package.json
-      - run: npm run front:build
+      - run: cd front && npm run build && cd ..
       - run: wrangler login
       - run: npm run kv:create
       - run: npm run kv:init
