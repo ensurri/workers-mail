@@ -9,12 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
-      - uses: actions/checkout@master
       - run: npm install
       - run: npm run front:build
       - run: wrangler login
       - run: npm run kv:create
       - run: npm run kv:init
       - run: npm run deploy
-      - name: Publish
       - run: npm run deploy:front
