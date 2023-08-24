@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
-      - run: npm install
+      - run: npm install package.json
       - run: npm run front:build
       - run: wrangler login
       - run: npm run kv:create
