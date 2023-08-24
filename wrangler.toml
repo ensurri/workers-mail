@@ -11,14 +11,14 @@ local_protocol = "http"
 host = "localhost:8787"
 
 [route]
-pattern = "api.mail.lain.im" ## API domain name
+pattern = "api.server.diskost.site" ## API domain name
 custom_domain = true
 
 [vars]
 BOUNCE_MAIL = false ## Whether to send bounce emails
-CATCH_ALL_ADDRESS = 'admin@lain.im' ## Catch-all email address
+CATCH_ALL_ADDRESS = 'server.diskost.site' ## Catch-all email address
 
-EMAIL_DOMAINS = [ "lain.im" ] ## Your email address domain name
+EMAIL_DOMAINS = [ "diskost.site" ] ## Your email address domain name
 DISABLE_REGISTRATION = true ## If true, disable new registration
 DISABLE_SENDING = true ## If true, disable send functionality
 SESSION_KV_NAME = "KV_EMAIL"
@@ -26,5 +26,5 @@ SESSION_TTL = 432000 ## Session expiration in seconds (Default: 5 days)
 
 [[ kv_namespaces ]] ## Run 'npm run kv:create'
 binding = "KV_EMAIL"
-id = "81877342b3a14c23bf79368417d9cbbb"
+id = "4614e364fe278aeaa9fba76c71512b58"
 preview_id = "36c28e6d36584ed89d8919a269828bcd"
