@@ -9,7 +9,7 @@
     "kv:init": "wrangler kv:key put --binding=KV_EMAIL --preview=false 'users' '[]'",
     "deploy": "wrangler deploy",
     "deploy:front": "cd ./front && npm run deploy",
-    "front:build": "cd front && npm run build",
+    "front:build": "cd ./front && npm run build",
     "dev": "wrangler dev",
     "dev:front": "cd ./front && npm run dev",
     "dev:init": "wrangler dev ./dev/index.js",
