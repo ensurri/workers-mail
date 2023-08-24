@@ -10,7 +10,7 @@ jobs:
     name: Deploy
     steps:
       - run: npm install package.json
-      - run: npx run build
+      - run: npm run build
       - run: wrangler login
       - run: npm run create
       - run: npm run init
